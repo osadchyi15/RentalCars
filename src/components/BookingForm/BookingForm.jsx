@@ -2,6 +2,20 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import s from "./BookingForm.module.css";
 import * as Yup from "yup";
 import toast from "react-hot-toast";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
+const DatePickerField = ({ field, form, ...props }) => {
+  return (
+    <DatePicker
+      {...props}
+      selected={field.value}
+      onChange={(date) => form.setFieldValue(field.name, date)}
+      dateFormat="yyyy-MM-dd"
+      placeholderText="Booking date"
+    />
+  );
+};
 
 const BookingForm = () => {
   const initialValues = {
@@ -13,7 +27,7 @@ const BookingForm = () => {
 
   const validationSchema = Yup.object({
     name: Yup.string()
-      .required("Email is required")
+      .required("Name is required")
       .min(3, "Must at least three symbols"),
 
     email: Yup.string()
@@ -35,8 +49,6 @@ const BookingForm = () => {
       date: values.date,
       comment: values.comment,
     };
-
-    console.log(bookingData);
 
     toast.success(
       "Thank you for your submission.\nA manager will get in touch with you soon."
@@ -70,7 +82,11 @@ const BookingForm = () => {
           </label>
 
           <label>
-            <Field name="date" className={s.input} placeholder="Booking date" />
+            <Field
+              name="date"
+              component={DatePickerField}
+              className={s.input}
+            />
             <ErrorMessage name="date" component="div" className={s.error} />
           </label>
 

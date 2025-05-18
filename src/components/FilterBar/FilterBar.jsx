@@ -201,16 +201,23 @@ const FilterBar = () => {
               <label className={s.label}>Car mileage / km</label>
               <div className={s.mileage}>
                 <div className={s.km}>
-                  <Field
-                    name="minMileage"
-                    className={s.inputFrom}
-                    placeholder="From"
-                  />
-                  <Field
-                    name="maxMileage"
-                    className={s.inputTo}
-                    placeholder="To"
-                  />
+                  <div className={s.mileageDiv}>
+                    <label htmlFor="minMileage">From</label>
+                    <Field
+                      name="minMileage"
+                      className={s.inputFrom}
+                      placeholder="From"
+                    />
+                  </div>
+
+                  <div className={s.mileageDiv}>
+                    <label htmlFor="maxMileage">To</label>
+                    <Field
+                      name="maxMileage"
+                      className={s.inputTo}
+                      placeholder="To"
+                    />
+                  </div>
                 </div>
                 <ErrorMessage
                   name="minMileage"
