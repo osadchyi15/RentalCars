@@ -1,0 +1,71 @@
+.hero {
+  display: flex;
+  position: absolute;
+  top: 68px;
+  flex-direction: column;
+  justify-content: end;
+  width: 100vw;
+  background-size: fill;
+  margin: 0 auto;
+  position: relative;
+}
+
+.heroImage {
+  width: 100%;
+  object-fit: cover;
+}
+
+.heroInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+  color: var(--white);
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.heroInfoTexts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+.heroInfoTitle {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.heroInfoDesc {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  text-align: center;
+}
+
+.heroInfoCatalogBtn {
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  padding: 12px 80px;
+  max-width: 276px;
+  max-height: 44px;
+  background: var(--button);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--white);
+  transition: all 500ms;
+}
+
+.heroInfoCatalogBtn:hover,
+.heroInfoCatalogBtn:focus {
+  background: var(--button-hover);
+}

@@ -1,0 +1,119 @@
+.carAbout {
+  display: flex;
+  max-width: 1200px;
+  gap: 72px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 152px;
+  margin-bottom: 40px;
+  font-family: var(--font-family);
+  color: var(--main);
+}
+.carImage {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 19px;
+  width: 640px;
+  height: 512px;
+}
+
+.carInfo {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.carMainInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+.carSecondaryInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 110px;
+}
+
+.titleAndId {
+  display: flex;
+  gap: 16px;
+  align-items: end;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  text-align: center;
+}
+
+.id {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--gray);
+}
+
+.addressAndMileage {
+  display: flex;
+  gap: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  margin-bottom: 16px;
+}
+
+.location {
+  display: flex;
+  gap: 4px;
+}
+
+.price {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--button);
+  margin-bottom: 32px;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  margin-bottom: 68px;
+}
+
+.specTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.spec {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.specList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.specItem {
+  display: flex;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+}

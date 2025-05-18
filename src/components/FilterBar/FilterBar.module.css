@@ -1,0 +1,165 @@
+.filters {
+  display: flex;
+  margin: 0 auto;
+  gap: 16px;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 56px;
+  margin-top: 152px;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: start;
+  justify-content: center;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--gray);
+}
+
+.selectWrapper {
+  position: relative;
+}
+
+.placeholder {
+  color: var(--main);
+}
+
+.arrowIcon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+.rotated {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.inputLabel {
+  outline: none;
+  border: none;
+}
+
+.select {
+  border-radius: 12px;
+  padding: 12px 16px;
+  width: 204px;
+  height: 44px;
+  background: var(--inputs);
+  border: none;
+  color: var(--main);
+  appearance: none;
+  position: relative;
+  outline: none;
+  text-align: left;
+}
+
+.select:hover,
+.select:focus {
+  color: var(--gray);
+}
+
+.menuPaper {
+  border: 1px solid var(--inputs);
+  border-radius: 12px;
+  height: 272px;
+  box-shadow: 0 4px 36px 0 rgba(0, 0, 0, 0.02);
+  background: var(--white);
+  margin-top: 4px;
+}
+
+.selectNoBorder {
+  background-color: #f7f7fb;
+  border-radius: 14px;
+  height: 48px;
+  font-size: 14px;
+  padding: 0 40px 0 18px;
+  color: #121417;
+}
+
+.noBorder {
+  border: none !important;
+}
+
+.selectNoBorder .MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+.selectNoBorder.Mui-focused .MuiOutlinedInput-notchedOutline,
+.selectNoBorder:hover .MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+.select option {
+  padding: 8px;
+  border: none;
+}
+
+.km {
+  display: flex;
+  position: relative;
+}
+
+.mileage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.error {
+  position: absolute;
+  bottom: -20px;
+  color: red;
+  font-size: 12px;
+}
+
+.inputFrom,
+.inputTo {
+  width: 160px;
+  height: 44px;
+  padding-left: 24px;
+  background: var(--inputs);
+  color: var(--main);
+  border: none;
+  outline: none;
+}
+
+.inputFrom {
+  border-right: 1px solid var(--gray-light);
+  border-radius: 12px 0 0 12px;
+}
+
+.inputTo {
+  border-radius: 0 12px 12px 0;
+}
+
+.inputFrom::placeholder,
+.inputTo::placeholder {
+  color: var(--main);
+}
+
+.searchBtn {
+  border-radius: 12px;
+  padding: 12px 51px;
+  width: 156px;
+  height: 44px;
+  background-color: var(--button);
+  color: #fff;
+  transition: all 500ms;
+  border: none;
+}
+
+.searchBtn:hover,
+.searchBtn:focus {
+  background-color: var(--button-hover);
+}

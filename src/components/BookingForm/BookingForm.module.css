@@ -1,0 +1,74 @@
+.bookingForm {
+  border: 1px solid var(--gray-light);
+  border-radius: 10px;
+  padding: 32px;
+  width: 100%;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.formTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: start;
+}
+
+.formTitleMain {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.formTitleSecondary {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--gray);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+label {
+  width: 100%;
+  position: relative;
+}
+
+.input {
+  border-radius: 12px;
+  padding: 12px 20px;
+  background: var(--inputs);
+  outline: none;
+  border: none;
+  width: 576px;
+}
+
+.sendBtn {
+  border-radius: 12px;
+  padding: 12px 51px;
+  width: 156px;
+  height: 44px;
+  background: var(--button);
+  color: var(--white);
+  border: none;
+  margin: 0 auto;
+  transition: all 500ms;
+  margin-top: 24px;
+}
+
+.sendBtn:hover {
+  background-color: var(--button-hover);
+}
+
+.error {
+  position: absolute;
+  bottom: -12px;
+  color: red;
+  font-size: 12px;
+}

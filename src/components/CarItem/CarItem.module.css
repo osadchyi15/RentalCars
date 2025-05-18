@@ -1,0 +1,65 @@
+.car {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 276px;
+  position: relative;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.carInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 276px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--main);
+}
+
+.model {
+  color: var(--button);
+}
+
+.carMoreInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: start;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--gray);
+}
+
+.readMoreBtn {
+  border-radius: 12px;
+  padding: 12px;
+  width: 276px;
+  background: var(--button);
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: var(--white);
+  border: none;
+  transition: all 500ms;
+}
+
+.readMoreBtn:hover {
+  background: var(--button-hover);
+}
+
+.favorite {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background-color: transparent;
+}
