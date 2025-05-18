@@ -15,6 +15,7 @@ import {
   OutlinedInput,
 } from "@mui/material";
 import { useState } from "react";
+import clsx from "clsx";
 
 const FilterBar = () => {
   const dispatch = useDispatch();
@@ -201,22 +202,14 @@ const FilterBar = () => {
               <label className={s.label}>Car mileage / km</label>
               <div className={s.mileage}>
                 <div className={s.km}>
-                  <div className={s.mileageDiv}>
+                  <div className={clsx(s.mileageDiv, s.inputFrom)}>
                     <label htmlFor="minMileage">From</label>
-                    <Field
-                      name="minMileage"
-                      className={s.inputFrom}
-                      placeholder="From"
-                    />
+                    <Field name="minMileage" className={s.inputNumber} />
                   </div>
 
-                  <div className={s.mileageDiv}>
+                  <div className={clsx(s.mileageDiv, s.inputTo)}>
                     <label htmlFor="maxMileage">To</label>
-                    <Field
-                      name="maxMileage"
-                      className={s.inputTo}
-                      placeholder="To"
-                    />
+                    <Field name="maxMileage" className={s.inputNumber} />
                   </div>
                 </div>
                 <ErrorMessage
